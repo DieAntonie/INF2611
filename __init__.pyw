@@ -6,6 +6,10 @@ class MyForm(QtGui.QDialog):
         QtGui.QWidget.__init__(self, parent)
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
+        QtCore.QObject.connect(self.ui.ClickMeButton, QtCore.SIGNAL('clicked()'), self.displayMessage)
+
+    def displayMessage(self):
+        self.ui.labelMessage.setText("Hello " + self.ui.lineUserName.text())
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
