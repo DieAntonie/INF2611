@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>121</height>
+    <width>391</width>
+    <height>142</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,34 +17,95 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>30</y>
+     <y>10</y>
      <width>91</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Enter First Number</string>
+    <string>&amp;Number of items</string>
+   </property>
+   <property name="buddy">
+    <cstring>quantity</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="quantity">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>10</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="labelSecondNumber">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>111</width>
+     <x>180</x>
+     <y>10</y>
+     <width>71</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Enter Second Number</string>
+    <string>&amp;Price per item</string>
+   </property>
+   <property name="buddy">
+    <cstring>rate</cstring>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineFirstNumber">
+  <widget class="QLineEdit" name="rate">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAddition">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Discount Percentage</string>
+   </property>
+   <property name="buddy">
+    <cstring>discount</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="discount">
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>30</y>
-     <width>131</width>
+     <y>50</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="result">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>391</width>
      <height>20</height>
     </rect>
    </property>
@@ -55,43 +116,23 @@
   <widget class="QPushButton" name="Add">
    <property name="geometry">
     <rect>
-     <x>154</x>
-     <y>90</y>
-     <width>91</width>
+     <x>160</x>
+     <y>80</y>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Add</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelAddition">
-   <property name="geometry">
-    <rect>
-     <x>276</x>
-     <y>40</y>
-     <width>111</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineSecondNumber">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>60</y>
-     <width>131</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
+    <string>Calculate Amount</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>quantity</tabstop>
+  <tabstop>discount</tabstop>
+  <tabstop>rate</tabstop>
+  <tabstop>Add</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
