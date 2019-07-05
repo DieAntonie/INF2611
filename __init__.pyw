@@ -6,10 +6,15 @@ class MyForm(QtGui.QDialog):
         QtGui.QWidget.__init__(self, parent)
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
-        QtCore.QObject.connect(self.ui.ClickMeButton, QtCore.SIGNAL('clicked()'), self.displayMessage)
+        QtCore.QObject.connect(self.ui.Add, QtCore.SIGNAL('clicked()'), self.displaySum)
 
-    def displayMessage(self):
-        self.ui.labelMessage.setText("Hello " + self.ui.lineUserName.text())
+    def displaySum(self):
+        firstNumber = self.convertToInt(self.ui.lineFirstNumber.text())
+        secondNumber = self.convertToInt(self.ui.lineSecondNumber.text())
+        self.ui.labelAddition.setText("Addition: " + str(firstNumber + secondNumber))
+
+    def convertToInt(self, text):
+        return int(text) if len(text) else 0
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
