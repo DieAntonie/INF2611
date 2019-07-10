@@ -22,9 +22,9 @@
      <height>301</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="formLayout">
     <item>
-     <widget class="QLabel" name="TitleLbl">
+     <widget class="QLabel" name="titleLbl">
       <property name="text">
        <string>Wollies</string>
       </property>
@@ -45,51 +45,61 @@
        <attribute name="title">
         <string>Home</string>
        </attribute>
-       <widget class="QDialogButtonBox" name="buttonBox">
+       <widget class="QWidget" name="verticalLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>201</width>
-          <height>21</height>
+          <x>0</x>
+          <y>0</y>
+          <width>211</width>
+          <height>191</height>
          </rect>
         </property>
-        <property name="standardButtons">
-         <set>QDialogButtonBox::No|QDialogButtonBox::Yes</set>
-        </property>
-       </widget>
-       <widget class="QSpinBox" name="spinBox">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>170</y>
-          <width>42</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QTextBrowser" name="textBrowser">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>201</width>
-          <height>121</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>170</y>
-          <width>141</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>How many pets do you own?</string>
-        </property>
+        <layout class="QVBoxLayout" name="indexLayout">
+         <item>
+          <widget class="QTextBrowser" name="postTxt">
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;1000 km Challenge for 2019/2020&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:10pt; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Wollies is truly blessed by being nominated as the lucky beneficiary for the 1000 km Challenge for 2019/2020.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:7pt; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Thank you so much to each organizer, supporter and athlete who will take part in this special project.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:7pt; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;To all involved, we invite you to our shelter to share in the love and passion we have for our furry friends.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:7pt; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Good luck with the challenge ahead, we here at Wollies, all more than 1000 of us, are supporting you all the way!&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,sans-serif'; font-size:7pt; color:#333333; background-color:#ffffff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;For more info please check out https://www.1000kmchallenge.co.za/&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="attendanceLbl">
+           <property name="text">
+            <string>Will you be attending?</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDialogButtonBox" name="attendanceBtnbx">
+           <property name="standardButtons">
+            <set>QDialogButtonBox::No|QDialogButtonBox::Yes</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="formInputLayout">
+           <item>
+            <widget class="QLabel" name="petsOwnedLbl">
+             <property name="text">
+              <string>How many pets do you own?</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="petsOwnedSpnbx"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="aboutTab">
@@ -180,7 +190,7 @@ p, li { white-space: pre-wrap; }
          <string>wollies.cillat@gmail.com</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="cellLbl">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -193,7 +203,7 @@ p, li { white-space: pre-wrap; }
          <string>Cell:</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="cellTxt">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -210,7 +220,7 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="NameLbl">
+     <widget class="QLabel" name="nameLbl">
       <property name="text">
        <string>Chris Antonie Pieterse</string>
       </property>
@@ -220,7 +230,7 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="StudentNrLbl">
+     <widget class="QLabel" name="studentNrLbl">
       <property name="text">
        <string>5179-012-2</string>
       </property>
@@ -230,7 +240,7 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="URLLbl">
+     <widget class="QLabel" name="urlLbl">
       <property name="text">
        <string>http://wollies.org/</string>
       </property>
