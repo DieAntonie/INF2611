@@ -3,6 +3,8 @@ from Assignment2a import *
 from PyQt4.QtGui import *
 
 SCALE_CONST = 0.95
+DAY_IMAGE = "day.jpg"
+NIGHT_IMAGE = "night.jpg"
 
 class MyForm(QtGui.QDialog):
     def __init__(self, parent=None):
@@ -14,9 +16,9 @@ class MyForm(QtGui.QDialog):
 
     def setupSysClockLcd(self):
         def showLCD():
-            time = QtCore.QTime.currentTime()
-            text = time.toString('hh:mm')
-            self.ui.sysClockLcd.display(text)
+            currentTime = QtCore.QTime.currentTime()
+            currentTimeText = currentTime.toString('hh:mm')
+            self.ui.sysClockLcd.display(currentTimeText)
 
         timer = QtCore.QTimer(self)
         timer.timeout.connect(showLCD)
@@ -26,7 +28,13 @@ class MyForm(QtGui.QDialog):
     def setupCurrentTimeVisualization(self):
         def getCurrentTimePixmap():
             pixmap = QtGui.QPixmap()
-            pixmap.load("night.jpg")
+            currentTime = QtCore.QTime.currentTime()
+            workStartTime = QtCore.QTime(8,0)
+            workEndTime = QtCore.QTime(17,0)
+            if workStartTime <= currentTime and currentTime <= workEndTime:
+                pixmap.load(DAY_IMAGE)
+            else:
+                pixmap.load(NIGHT_IMAGE)
             return pixmap
 
         def formatPixmap(pixmap):
