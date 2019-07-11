@@ -1,6 +1,6 @@
 from __future__ import division
 import sys
-from Assignment1Form import *
+from Assignment1 import *
 
 class MyForm(QtGui.QDialog):
     def __init__(self, parent=None):
