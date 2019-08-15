@@ -25,7 +25,7 @@ except AttributeError:
 class Ui_Question2(object):
     def setupUi(self, Question2):
         Question2.setObjectName(_fromUtf8("Question2"))
-        Question2.resize(341, 281)
+        Question2.resize(340, 310)
         self.CalendarWidget = QtGui.QCalendarWidget(Question2)
         self.CalendarWidget.setGeometry(QtCore.QRect(10, 40, 321, 191))
         self.CalendarWidget.setObjectName(_fromUtf8("CalendarWidget"))
@@ -38,6 +38,12 @@ class Ui_Question2(object):
         self.DaysRemainingTxt = QtGui.QLabel(Question2)
         self.DaysRemainingTxt.setGeometry(QtCore.QRect(100, 240, 231, 31))
         self.DaysRemainingTxt.setObjectName(_fromUtf8("DaysRemainingTxt"))
+        self.label = QtGui.QLabel(Question2)
+        self.label.setGeometry(QtCore.QRect(220, 270, 111, 21))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.label_2 = QtGui.QLabel(Question2)
+        self.label_2.setGeometry(QtCore.QRect(270, 290, 61, 16))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
 
         self.retranslateUi(Question2)
         QtCore.QObject.connect(self.CalendarWidget, QtCore.SIGNAL(_fromUtf8("selectionChanged()")), self.CalculateBtn.toggle)
@@ -48,4 +54,6 @@ class Ui_Question2(object):
         self.TitleLbl.setText(_translate("Question2", "Select a date to determine the days remaining in this year:", None))
         self.CalculateBtn.setText(_translate("Question2", "Calculate", None))
         self.DaysRemainingTxt.setText(_translate("Question2", "Days remaining in this year...", None))
+        self.label.setText(_translate("Question2", "Chris Antonie Pieterse", None))
+        self.label_2.setText(_translate("Question2", "5179-012-2", None))
 

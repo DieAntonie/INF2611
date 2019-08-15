@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>240</width>
-    <height>320</height>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -47,6 +47,32 @@
      <width>221</width>
      <height>171</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameLbl">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>316</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chris Antonie Pieterse</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="studentNrLbl">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>336</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5179-012-2</string>
    </property>
   </widget>
  </widget>
