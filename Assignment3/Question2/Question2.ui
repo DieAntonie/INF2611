@@ -28,7 +28,7 @@
     </property>
     <widget class="QWidget" name="AddWndw">
      <property name="windowTitle">
-      <string>Subwindow</string>
+      <string>Add New Record</string>
      </property>
      <widget class="QWidget" name="formLayoutWidget">
       <property name="geometry">
@@ -97,7 +97,7 @@
     </widget>
     <widget class="QWidget" name="EditWndw">
      <property name="windowTitle">
-      <string>Subwindow</string>
+      <string>Edit Existing Record</string>
      </property>
      <widget class="QTableWidget" name="ExistingTbl">
       <property name="geometry">
@@ -216,7 +216,7 @@
     </widget>
     <widget class="QWidget" name="DeleteWndw">
      <property name="windowTitle">
-      <string>Subwindow</string>
+      <string>Delete Existing Record</string>
      </property>
      <widget class="QListWidget" name="DeleteLst">
       <property name="geometry">

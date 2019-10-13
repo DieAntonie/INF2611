@@ -7,7 +7,7 @@ class MyForm(QtGui.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.WorkspaceMdi.addSubWindow(self.ui.HomeWndw)
-        self.ui.WorkspaceMdi.addSubWindow(self.ui.AboutWndw)
+        self.ui.WorkspaceMdi.addSubWindow(self.ui.ContactWndw)
         QtCore.QObject.connect(self.ui.openHomeActn, QtCore.SIGNAL('triggered()'), self.openHomeWindow)
         QtCore.QObject.connect(self.ui.openAboutActn, QtCore.SIGNAL('triggered()'), self.openAboutWindow)
         QtCore.QObject.connect(self.ui.openContactActn, QtCore.SIGNAL('triggered()'), self.openContactUsWindow)
